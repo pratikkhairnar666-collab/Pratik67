@@ -1,0 +1,96 @@
+
+  <head>
+    <title>Student ID Card</title>
+    <style>
+      body{
+        background: #817F7E;
+        color: black;
+        border: 20px solid black;
+        margin: 10px solid black;
+        margin-top: 10px;
+        box-shadow: 10px;
+        text-shadow: 10px solid black;
+        font-family: sans-serif;
+      }
+      .header{
+        background: #817F7E;
+        height: 100px;
+        position: relative;
+      }
+      .header ::after{
+        content: "";
+        radius: 50%;
+        height: 350;
+        width: 450;
+        bottom: -150;
+        background: white;
+      }
+      .id card{
+         width: 350px;
+         min-height: 600px;
+         overflow: hidden;
+         background: white;
+      }
+      .#qrcode {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+      }
+      
+    </style>
+    <body>
+      <div class="header"></div>
+      <div class="id card"></div>
+       <img src=""
+       <h2 style="text-align: center;">Student ID Card</h2>
+          <table border="2">
+  <tr>
+    <td><b>Name</b></td>
+    <td>
+      <input type="text" value="Pratik Subhash Khairnar">
+    </td>
+  </tr>
+  <tr>
+    <td><b>Enrollment Number</b></td>
+    <td>
+      <input type="enrolment number"value="0018764">
+    </td>
+  </tr>
+  <tr>
+    <td><b>Collage Name</b></td>
+    <td>
+       <input type="Collage name"value="R.N.G Patel Institute Of Technology">
+    </td>
+  </tr>
+  <tr>
+    <td><b>D.O.B</b></td>
+    <td>
+      <input type="D.O.B"value="30/9/2008">
+    </td>
+  </tr>
+  <tr>
+    <td><b>Blood Group</b></td>
+    <td>
+      <input type="blood group"value="B+">
+    </td>
+  </tr>
+    <tr>
+      <td><b>Address</b></td>
+      <td>
+        <input type="address"value="120,Khodiyar nagar bardoli">
+      </td>
+    </tr>
+          </table>
+      <div id="Qrcode"></div>
+      <div id="qrcode"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+
+<script>
+let details = "Name: Pratik\nCourse: IT\nEnrollment Number: 12345";
+
+new QRCode(document.getElementById("qrcode"), details);
+</script>
+    </body>
+  </head>
+</html>
